@@ -1,0 +1,25 @@
+{% extends 'core/base.html' %}  
+
+{% block title %}Acerca de{% endblock %}
+
+{% block background%}{% load static %}{% static 'core/img/aboutb.jpg' %}{% endblock %}
+
+{% block headers %}
+      <h1>Acerca de</h1>
+      <span class="subheading">Biografía</span>
+{% endblock %}
+
+{% block content %}
+      <div class="container">
+      <div class="row">   
+        <div class="col-lg-3 col-md-4 offset-lg-1">
+          <img class="img-fluid avatar" src="{% static 'core/img/avatarb.jpg' %}" alt="">
+        </div>
+        <div class="col-lg-7 col-md-8">
+          <h2 class="section-heading">Karen Mendoza</h2>   
+          <p>me llamo karen vivo en crucita y naci en Portoviejo el 4 de enero del 2001 soy estudiante de la universidad tecnica de manabi cursando el 4 semestre de la carrera de sistemas de informacion</p>
+          
+        </div>
+      </div>  
+    </div>
+{% endblock %}
